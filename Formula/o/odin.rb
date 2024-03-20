@@ -5,6 +5,7 @@ class Odin < Formula
       tag:      "dev-2024-03",
       revision: "4c35633e0147b481dd7b2352d6bdb603f78c6dc7"
   version "2024-03"
+  revision 1
   license "BSD-3-Clause"
   head "https://github.com/odin-lang/Odin.git", branch: "master"
 
@@ -19,8 +20,9 @@ class Odin < Formula
   end
 
   depends_on "glfw"
-  depends_on "llvm"
+  depends_on "llvm@17"
   depends_on "raylib"
+  depends_on "llvm@17"
 
   fails_with gcc: "5" # LLVM is built with GCC
 
